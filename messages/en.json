@@ -1,0 +1,463 @@
+{
+    "nav": {
+        "home": "The Vision",
+        "services": "Capabilities",
+        "portfolio": "Selected Works",
+        "about": "Our DNA",
+        "contact": "Start a Project",
+        "careers": "Careers"
+    },
+    "careers": {
+        "title": "Join the Collective",
+        "subtitle": "We are looking for the misfits, the rebels, and the troublemakers who push the human race forward.",
+        "openings": "Open Positions",
+        "apply": "Apply Now",
+        "jobs": {
+            "marketing": {
+                "title": "Marketing Specialist",
+                "type": "Full-time",
+                "location": "Riyadh / Hybrid",
+                "description": "Lead our growth. Craft campaigns that don't just reach people, but move them.",
+                "responsibilities": [
+                    "Develop and execute comprehensive marketing strategies.",
+                    "Manage social media channels and content calendars.",
+                    "Analyze campaign performance and optimize for ROI.",
+                    "Collaborate with design and dev teams for product launches."
+                ],
+                "requirements": [
+                    "3+ years of experience in digital marketing.",
+                    "Proficiency in SEO, SEM, and analytics tools.",
+                    "Strong copywriting and storytelling skills.",
+                    "Fluency in Arabic and English."
+                ]
+            },
+            "software": {
+                "title": "Software Engineer",
+                "type": "Full-time",
+                "location": "Remote / Riyadh",
+                "description": "Architect scalable systems. Write code that is as beautiful as it is functional.",
+                "responsibilities": [
+                    "Build and maintain high-performance web applications using Next.js.",
+                    "Write clean, maintainable, and type-safe code.",
+                    "Participate in code reviews and architectural discussions.",
+                    "Optimize applications for maximum speed and scalability."
+                ],
+                "requirements": [
+                    "Strong proficiency in TypeScript, React, and Node.js.",
+                    "Experience with modern frontend tools (Tailwind, Framer Motion).",
+                    "Understanding of server-side rendering and static generation.",
+                    "Problem-solving mindset and attention to detail."
+                ]
+            },
+            "sales": {
+                "title": "Sales Specialist",
+                "type": "Full-time",
+                "location": "Riyadh",
+                "description": "Build relationships. Close deals that transform businesses.",
+                "responsibilities": [
+                    "Identify and qualify new business opportunities.",
+                    "Build and maintain strong, long-lasting client relationships.",
+                    "Negotiate contracts and close agreements.",
+                    "Forecast sales activity and revenue achievement."
+                ],
+                "requirements": [
+                    "Proven work experience as a Sales Representative or similar role.",
+                    "Excellent selling, communication, and negotiation skills.",
+                    "Prioritizing, time management, and organizational skills.",
+                    "Ability to create and deliver presentations tailored to audience needs."
+                ]
+            },
+            "photographer": {
+                "title": "Photographer",
+                "type": "Freelance / Contract",
+                "location": "Riyadh",
+                "description": "Capture the essence. Visual storytelling through the lens.",
+                "responsibilities": [
+                    "Capture high-quality images for clients and internal projects.",
+                    "Edit and retouch photos to meet brand standards.",
+                    "Collaborate with the creative team on visual direction.",
+                    "Manage equipment and studio setup."
+                ],
+                "requirements": [
+                    "Strong portfolio demonstrating skills in portrait and product photography.",
+                    "Proficiency in Adobe Creative Suite (Photoshop, Lightroom).",
+                    "Experience with studio lighting and equipment.",
+                    "Creative eye and attention to detail."
+                ]
+            },
+            "social": {
+                "title": "Social Media Specialist",
+                "type": "Full-time",
+                "location": "Riyadh",
+                "description": "Own the conversation. Build communities, not just followers.",
+                "responsibilities": [
+                    "Create engaging daily content for all social media platforms.",
+                    "Monitor trends and engage with the community.",
+                    "Develop social media strategies to increase brand awareness.",
+                    "Report on social media metrics and insights."
+                ],
+                "requirements": [
+                    "Proven experience as a Social Media Specialist.",
+                    "Excellent knowledge of Instagram, Twitter, LinkedIn, and TikTok.",
+                    "Strong content creation skills (video/photo).",
+                    "Ability to work in a fast-paced environment."
+                ]
+            },
+            "uiux": {
+                "title": "UX/UI Designer",
+                "type": "Full-time",
+                "location": "Riyadh / Remote",
+                "description": "Design the future. Create interfaces that feel like magic.",
+                "responsibilities": [
+                    "Gather and evaluate user requirements in collaboration with PMs and engineers.",
+                    "Illustrate design ideas using storyboards, process flows, and sitemaps.",
+                    "Design graphic user interface elements (menus, tabs, widgets).",
+                    "Develop UI mockups and prototypes."
+                ],
+                "requirements": [
+                    "Proven work experience as a UI/UX Designer.",
+                    "Portfolio of design projects.",
+                    "Knowledge of wireframe tools (e.g., Figma).",
+                    "Team spirit; strong communication skills to collaborate with various stakeholders."
+                ]
+            }
+        }
+    },
+    "hero": {
+        "title": "We craft digital",
+        "highlight": "masterpieces.",
+        "description": "Where aesthetic intelligence meets engineering precision. We don't just build websites; we architect digital experiences that captivate, convert, and define brands.",
+        "cta": "Explore the Future",
+        "secondaryCta": "See Our Work"
+    },
+    "services": {
+        "title": "Our Capabilities",
+        "subtitle": "Engineering growth through design and code",
+        "marketing": {
+            "title": "Digital Dominance",
+            "description": "Strategies that don't just reach audiences—they resonate. We turn attention into obsession.",
+            "features": {
+                "seo": "Algorithmic Supremacy (SEO)",
+                "social": "Brand Narrative & Social",
+                "ads": "High-Conversion PPC",
+                "content": "Storytelling & Content Architecture"
+            }
+        },
+        "software": {
+            "title": "Software Architecture",
+            "description": "Building the engines of tomorrow. scalable, robust, and beautiful code that powers your business logic.",
+            "features": {
+                "web": "Next-Gen Web Applications",
+                "api": "High-Performance APIs",
+                "cloud": "Cloud Infrastructure",
+                "saas": "SaaS Product Development"
+            }
+        },
+        "mobile": {
+            "title": "Mobile Ecosystems",
+            "description": "Experiences that fit in your hand but expand your world. Native and cross-platform mastery.",
+            "features": {
+                "ios": "iOS Experience Design",
+                "android": "Android Engineering",
+                "flutter": "Cross-Platform Unity",
+                "uiux": "Tactile User Interfaces"
+            }
+        },
+        "branding": {
+            "title": "Branding & Identity",
+            "description": "Crafting the visual voice of your brand. Logos and systems that leave a mark.",
+            "features": {
+                "logo": "Logo Design",
+                "guidelines": "Brand Guidelines",
+                "visuals": "Visual Language",
+                "print": "Print Applications"
+            }
+        },
+        "uiux": {
+            "title": "UI/UX Design",
+            "description": "Human-centric design. Seamless user journeys and intuitive interfaces.",
+            "features": {
+                "research": "User Research",
+                "wireframe": "Wireframing",
+                "prototype": "Prototyping",
+                "testing": "Usability Testing"
+            }
+        },
+        "consulting": {
+            "title": "Digital Consulting",
+            "description": "Insight into your digital future. Strategic solutions for complex challenges.",
+            "features": {
+                "transformation": "Digital Transformation",
+                "audit": "Tech Audit",
+                "growth": "Growth Strategy",
+                "security": "Security Consulting"
+            }
+        },
+        "process": {
+            "title": "Our Methodology",
+            "subtitle": "From vague idea to deployed masterpiece in five steps.",
+            "discovery": {
+                "title": "Discovery",
+                "desc": "We dive deep into your brand, audience, and goals."
+            },
+            "strategy": {
+                "title": "Strategy",
+                "desc": "Architecting the technical and creative blueprint."
+            },
+            "design": {
+                "title": "Design",
+                "desc": "Visualizing the user experience with high-fidelity prototypes."
+            },
+            "development": {
+                "title": "Development",
+                "desc": "Writing clean, scalable code that brings designs to life."
+            },
+            "launch": {
+                "title": "Launch",
+                "desc": "Deployment, optimization, and handoff."
+            }
+        },
+        "techStack": {
+            "title": "Our Arsenal",
+            "subtitle": "Powered by modern, bleeding-edge technologies."
+        },
+        "start_project": "Start Project"
+    },
+    "portfolio": {
+        "title": "Selected Works",
+        "subtitle": "A gallery of digital transformation",
+        "items": {
+            "ecommerce": {
+                "title": "LuxMart",
+                "category": "E-Commerce / Web",
+                "description": "Redefining luxury retail in the digital age.",
+                "outcome": "+150% Q1 Revenue Growth"
+            },
+            "fintech": {
+                "title": "PayFlow",
+                "category": "FinTech / Mobile",
+                "description": "Simplifying complex financial data into a fluid mobile experience.",
+                "outcome": "100k+ Active Users in 3 Months"
+            },
+            "realestate": {
+                "title": "Urban Key",
+                "category": "PropTech / Platform",
+                "description": "Connecting people to spaces through an immersive property discovery platform.",
+                "outcome": "Award-Winning UX Design"
+            },
+            "health": {
+                "title": "HealthPlus",
+                "category": "HealthTech / Mobile",
+                "description": "Revolutionizing patient care with AI-driven diagnostics.",
+                "outcome": "2M+ App Downloads"
+            },
+            "saas": {
+                "title": "NextStep",
+                "category": "SaaS / Platform",
+                "description": "Streamlining project management with intelligent automation.",
+                "outcome": "500+ Teams Onboarded"
+            },
+            "fitness": {
+                "title": "Elevate",
+                "category": "Fitness / Mobile",
+                "description": "Empowering users to achieve fitness goals through personalized tracking.",
+                "outcome": "1M+ Active Users"
+            }
+        },
+        "filters": {
+            "all": "All Work",
+            "web": "Web Development",
+            "mobile": "Mobile Apps",
+            "branding": "Branding"
+        },
+        "stats": {
+            "title": "Proven Track Record",
+            "subtitle": "Numbers that speak louder than words.",
+            "projects": {
+                "label": "Projects Delivered"
+            },
+            "clients": {
+                "label": "Happy Clients"
+            },
+            "awards": {
+                "label": "Industry Awards"
+            },
+            "satisfaction": {
+                "label": "Satisfaction Rate"
+            }
+        },
+        "testimonials": {
+            "title": "What Clients Say",
+            "subtitle": "Real feedback from real partnerships.",
+            "items": {
+                "ceo": {
+                    "quote": "Working with Aesthetic Element transformed our entire digital presence. Their attention to detail and creative vision is unmatched.",
+                    "name": "Sarah Martinez",
+                    "role": "CEO"
+                },
+                "founder": {
+                    "quote": "They didn't just build an app—they crafted an experience. Our users are obsessed, and so are we.",
+                    "name": "James Chen",
+                    "role": "Founder"
+                },
+                "cto": {
+                    "quote": "The technical expertise combined with their design sensibility is rare. Best investment we've made.",
+                    "name": "Michael Roberts",
+                    "role": "CTO"
+                }
+            }
+        }
+    },
+    "about": {
+        "title": "Who We Are",
+        "stats": {
+            "clients": "Key Partners",
+            "projects": "Deployments",
+            "experience": "Years of Innovation"
+        },
+        "description": "We are a collective of dreamers, designers, and engineers united by a single obsession: Perfection.",
+        "story": {
+            "title": "The Origin",
+            "content": "Aesthetic Element wasn't founded to be an agency. It started as a rebellion against the mediocre. In a world of templates, we chose bespoke. In a world of noise, we chose signal."
+        },
+        "values": {
+            "title": "The Code We Live By",
+            "innovation": "Innovate or Die: Use the latest tech, or become history.",
+            "quality": "Pixel Perfection: Good enough is not enough.",
+            "integrity": "Radical Transparency: We build trust, not just code."
+        },
+        "timeline": {
+            "title": "Through the Years",
+            "founding": {
+                "title": "The Spark",
+                "description": "Founded in a garage with nothing but a laptop and a vision to disrupt the digital landscape."
+            },
+            "expansion": {
+                "title": "Going Global",
+                "description": "Opened our first international office and secured partnerships with Fortune 500 clients."
+            },
+            "awards": {
+                "title": "Recognition",
+                "description": "Swept the Digital Design Awards, cementing our place as industry leaders."
+            },
+            "future": {
+                "title": "The Next Horizon",
+                "description": "Launching our proprietary AI design engine. The future is automated aesthetic."
+            }
+        },
+        "team": {
+            "title": "The Architects",
+            "subtitle": "The minds behind the machines.",
+            "members": {
+                "ceo": {
+                    "name": "Alex Morgan",
+                    "role": "Chief Architect",
+                    "bio": "Visionary leader with a decade of experience in scaling digital products."
+                },
+                "cd": {
+                    "name": "Sarah Chen",
+                    "role": "Head of Design",
+                    "bio": "Award-winning designer obsessed with typography and micro-interactions."
+                },
+                "cto": {
+                    "name": "Marcus Kane",
+                    "role": "Tech Lead",
+                    "bio": "Full-stack wizard who turns complex logic into elegant code."
+                },
+                "lead_dev": {
+                    "name": "David Kim",
+                    "role": "Lead Developer",
+                    "bio": "Specialist in high-performance rendering and cloud architecture."
+                }
+            }
+        },
+        "philosophy": {
+            "line1": "Aesthetic Intelligence",
+            "line2": "Engineering Precision",
+            "quote": "Design is not just what it looks like and feels like. Design is how it works."
+        }
+    },
+    "contact": {
+        "title": "Let's Build the Future",
+        "subtitle": "Your vision, our velocity. Ready to launch?",
+        "form": {
+            "name": "What should we call you?",
+            "email": "Where can we reach you?",
+            "phone": "Your phone number (optional)",
+            "message": "Tell us about your next big thing...",
+            "submit": "Initiate Sequence",
+            "sending": "Transmitting...",
+            "success": "Signal Received. Stand by."
+        },
+        "info": {
+            "title": "H.Q.",
+            "address": "Riyadh, Kingdom of Saudi Arabia",
+            "email": "hello@aestheticelement.sa",
+            "phone": "+966 50 000 0000"
+        },
+        "interactive": {
+            "next": "Next",
+            "finish": "Send Request",
+            "steps": {
+                "name": {
+                    "question": "First things first, what shall we call you?",
+                    "placeholder": "Your Name"
+                },
+                "email": {
+                    "question": "Where can we reach you?",
+                    "placeholder": "your@email.com"
+                },
+                "type": {
+                    "question": "What specifically can we help you with?"
+                },
+                "details": {
+                    "question": "Tell us a bit about your vision.",
+                    "placeholder": "I want to build..."
+                }
+            },
+            "types": {
+                "branding": "Branding",
+                "web": "Web Development",
+                "app": "Mobile App",
+                "marketing": "Marketing"
+            },
+            "success": {
+                "title": "Message Received",
+                "message": "Our digital artisans are reviewing your request. Expect a signal soon."
+            }
+        },
+        "faq": {
+            "title": "Declassified Information",
+            "q1": "What is the timeline for a digital masterpiece?",
+            "a1": "Greatness takes time, but we move fast. Typical engagements range from 4-12 weeks depending on complexity.",
+            "q2": "Do you support us after launch?",
+            "a2": "Absolutely. We offer elite maintenance packages to ensure your digital asset remains pristine."
+        },
+        "timeline": {
+            "title": "What Happens Next?",
+            "subtitle": "A transparent look at our engagement process.",
+            "contact": {
+                "title": "Initiation",
+                "desc": "You reach out. We respond within 24 hours."
+            },
+            "discovery": {
+                "title": "Discovery Call",
+                "desc": "We align on goals, scope, and vision."
+            },
+            "proposal": {
+                "title": "The Blueprint",
+                "desc": "We present a strategic roadmap and quote."
+            },
+            "kickoff": {
+                "title": "Ignition",
+                "desc": "Contracts signed. The build begins."
+            }
+        }
+    },
+    "footer": {
+        "tagline": "Designing the interface of tomorrow.",
+        "quickLinks": "Navigation",
+        "followUs": "Connect",
+        "rights": "All rights reserved"
+    }
+}
