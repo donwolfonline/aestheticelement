@@ -146,8 +146,6 @@ export default function DetailedServices() {
                                         </p>
                                         <button className={`px-8 py-3 rounded-full font-bold text-white transition-all hover:scale-105 bg-gradient-to-r ${activeData.color} shadow-lg shadow-aesthetic-purple/20`}>
                                             {t('start_project')}
-                                            {/* Fallback to generic text or pull from contact section keys if 'contact.submit' is not ideal */}
-                                            Let's Talk
                                         </button>
                                     </div>
                                 </div>
