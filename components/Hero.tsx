@@ -1,11 +1,13 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import { TextReveal } from './ui/TextReveal';
 
 export default function Hero() {
     const t = useTranslations('hero');
+    const locale = useLocale();
+    const gap = locale === 'ar' ? '0.25em' : '0.5em';
 
     return (
         <section
@@ -28,11 +30,13 @@ export default function Hero() {
                     <TextReveal
                         text={t('title')}
                         className="heading-xl text-white justify-center"
+                        gap={gap}
                     />
                     <TextReveal
                         text={t('highlight')}
                         className="heading-xl text-gradient justify-center"
                         delay={0.5}
+                        gap={gap}
                     />
                 </div>
 

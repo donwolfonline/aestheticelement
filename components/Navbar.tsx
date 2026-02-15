@@ -40,19 +40,20 @@ export default function Navbar() {
                     }`}
             >
                 {/* Logo */}
-                <motion.div
-                    className="relative h-12 w-32 cursor-pointer"
-                    whileHover={{ scale: 1.05 }}
-                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                >
-                    <Image
-                        src={locale === 'ar' ? '/images/logo-ar.png' : '/images/logo-en.png'}
-                        alt="Aesthetic Element"
-                        fill
-                        className="object-contain"
-                        priority
-                    />
-                </motion.div>
+                <Link href={`/${locale}`}>
+                    <motion.div
+                        className="relative h-12 w-32 cursor-pointer"
+                        whileHover={{ scale: 1.05 }}
+                    >
+                        <Image
+                            src={locale === 'ar' ? '/images/logo-ar.png' : '/images/logo-en.png'}
+                            alt="Aesthetic Element"
+                            fill
+                            className="object-contain"
+                            priority
+                        />
+                    </motion.div>
+                </Link>
 
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex items-center gap-2">

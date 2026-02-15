@@ -12,6 +12,11 @@
         "subtitle": "نبحث عن المبدعين، المتمردين، وصناع التغيير الذين يدفعون حدود الممكن.",
         "openings": "الوظائف المتاحة",
         "apply": "قدّم الآن",
+        "job_details": {
+            "responsibilities": "المسؤوليات",
+            "requirements": "المتطلبات",
+            "apply_button": "قدّم على هذه الوظيفة"
+        },
         "jobs": {
             "marketing": {
                 "title": "أخصائي تسويق",
@@ -226,6 +231,14 @@
     "portfolio": {
         "title": "أعمال مختارة",
         "subtitle": "معرض للتحول الرقمي",
+        "actions": {
+            "view_case_study": "عرض دراسة الحالة"
+        },
+        "details": {
+            "brief": "الموجز",
+            "solution": "الحل",
+            "impact": "الأثر"
+        },
         "items": {
             "ecommerce": {
                 "title": "لوكس مارت",
@@ -393,14 +406,22 @@
             "title": "المقر الرئيسي",
             "address": "الرياض، المملكة العربية السعودية",
             "email": "hello@aestheticelement.sa",
-            "phone": "+966 50 000 0000"
+            "phone": "+966 50 000 0000",
+            "labels": {
+                "email": "البريد الإلكتروني",
+                "phone": "الهاتف",
+                "address": "العنوان"
+            }
+        },
+        "locations": {
+            "riyadh": "مقر الرياض"
         },
         "interactive": {
             "next": "التالي",
             "finish": "إرسال الطلب",
             "steps": {
                 "name": {
-                    "question": "بدايةً، كيف ناديك؟",
+                    "question": "بدايةً، ما هو اسمك الكريم؟",
                     "placeholder": "اسمك الكريم"
                 },
                 "email": {

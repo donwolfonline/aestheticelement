@@ -12,6 +12,11 @@
         "subtitle": "We are looking for the misfits, the rebels, and the troublemakers who push the human race forward.",
         "openings": "Open Positions",
         "apply": "Apply Now",
+        "job_details": {
+            "responsibilities": "Responsibilities",
+            "requirements": "Requirements",
+            "apply_button": "Apply for this position"
+        },
         "jobs": {
             "marketing": {
                 "title": "Marketing Specialist",
@@ -226,6 +231,14 @@
     "portfolio": {
         "title": "Selected Works",
         "subtitle": "A gallery of digital transformation",
+        "actions": {
+            "view_case_study": "View Case Study"
+        },
+        "details": {
+            "brief": "Brief",
+            "solution": "The Solution",
+            "impact": "Impact"
+        },
         "items": {
             "ecommerce": {
                 "title": "LuxMart",
@@ -393,7 +406,15 @@
             "title": "H.Q.",
             "address": "Riyadh, Kingdom of Saudi Arabia",
             "email": "hello@aestheticelement.sa",
-            "phone": "+966 50 000 0000"
+            "phone": "+966 50 000 0000",
+            "labels": {
+                "email": "Email",
+                "phone": "Phone",
+                "address": "Address"
+            }
+        },
+        "locations": {
+            "riyadh": "Riyadh HQ"
         },
         "interactive": {
             "next": "Next",

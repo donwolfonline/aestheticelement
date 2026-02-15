@@ -110,7 +110,7 @@ export default function PortfolioEnhanced() {
                                     <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
                                         <h3 className="text-2xl font-bold text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">{t(`items.${project.id}.title`)}</h3>
                                         <p className="text-aesthetic-teal mb-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">{t(`items.${project.id}.category`)}</p>
-                                        <span className="text-sm text-white/80 border-b border-aesthetic-gold pb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">View Case Study</span>
+                                        <span className="text-sm text-white/80 border-b border-aesthetic-gold pb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">{t('actions.view_case_study')}</span>
                                     </div>
                                 </div>
                             </motion.div>
@@ -150,19 +150,19 @@ export default function PortfolioEnhanced() {
                                 <div className="p-8 md:p-12 space-y-8">
                                     <div className="grid md:grid-cols-3 gap-8">
                                         <div className="md:col-span-2">
-                                            <h3 className="text-xl font-bold text-white mb-4">Brief</h3>
+                                            <h3 className="text-xl font-bold text-white mb-4">{t('details.brief')}</h3>
                                             <p className="text-white/70 leading-relaxed mb-6">
                                                 {t(`items.${selectedId}.description`)}
                                                 {/* In a real app, this would be a longer description from translation */}
                                             </p>
 
-                                            <h3 className="text-xl font-bold text-white mb-4">The Solution</h3>
+                                            <h3 className="text-xl font-bold text-white mb-4">{t('details.solution')}</h3>
                                             <p className="text-white/70 leading-relaxed">
                                                 Leveraging our aesthetic intelligence, we crafted a bespoke digital experience that merges form and function.
                                             </p>
                                         </div>
                                         <div className="glass p-6 rounded-xl h-fit">
-                                            <h4 className="text-sm text-white/50 uppercase tracking-wider mb-4">Impact</h4>
+                                            <h4 className="text-sm text-white/50 uppercase tracking-wider mb-4">{t('details.impact')}</h4>
                                             <div className="text-3xl font-bold text-aesthetic-teal mb-2">{t(`items.${selectedId}.outcome`)}</div>
                                             <p className="text-sm text-white/60">Measurable results that drive business growth.</p>
                                         </div>

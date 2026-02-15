@@ -138,22 +138,28 @@ export default function Contact() {
                     transition={{ duration: 0.6 }}
                     className="space-y-8"
                 >
-                    <div className="glass p-6 rounded-xl">
-                        <div className="text-4xl mb-4">📧</div>
-                        <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
-                        <p className="text-white/70">{t('info.email')}</p>
-                    </div>
+                    {/* Contact Details */}
+                    <div className="space-y-8">
+                        <div>
+                            <h3 className="text-xl font-semibold text-white mb-2">{t('info.labels.email')}</h3>
+                            <a href={`mailto:${t('info.email')}`} className="text-white/60 hover:text-aesthetic-gold transition-colors">
+                                {t('info.email')}
+                            </a>
+                        </div>
 
-                    <div className="glass p-6 rounded-xl">
-                        <div className="text-4xl mb-4">📱</div>
-                        <h3 className="text-xl font-semibold text-white mb-2">Phone</h3>
-                        <p className="text-white/70">{t('info.phone')}</p>
-                    </div>
+                        <div>
+                            <h3 className="text-xl font-semibold text-white mb-2">{t('info.labels.phone')}</h3>
+                            <a href={`tel:${t('info.phone')}`} className="text-white/60 hover:text-aesthetic-gold transition-colors" dir="ltr">
+                                {t('info.phone')}
+                            </a>
+                        </div>
 
-                    <div className="glass p-6 rounded-xl">
-                        <div className="text-4xl mb-4">📍</div>
-                        <h3 className="text-xl font-semibold text-white mb-2">Address</h3>
-                        <p className="text-white/70">{t('info.address')}</p>
+                        <div>
+                            <h3 className="text-xl font-semibold text-white mb-2">{t('info.labels.address')}</h3>
+                            <p className="text-white/60 leading-relaxed">
+                                {t('info.address')}
+                            </p>
+                        </div>
                     </div>
                 </motion.div>
             </div>

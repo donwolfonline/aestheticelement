@@ -6,9 +6,10 @@ interface TextRevealProps {
     text: string;
     className?: string;
     delay?: number;
+    gap?: string;
 }
 
-export const TextReveal = ({ text, className = "", delay = 0 }: TextRevealProps) => {
+export const TextReveal = ({ text, className = "", delay = 0, gap = "0.5em" }: TextRevealProps) => {
     const words = text.split(" ");
 
     const container = {
@@ -42,7 +43,7 @@ export const TextReveal = ({ text, className = "", delay = 0 }: TextRevealProps)
 
     return (
         <motion.div
-            style={{ overflow: "hidden", display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "0.25em" }}
+            style={{ overflow: "hidden", display: "flex", flexWrap: "wrap", justifyContent: "center", gap }}
             variants={container}
             initial="hidden"
             animate="visible"

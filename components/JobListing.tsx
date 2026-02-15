@@ -1,14 +1,20 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
+import { createPortal } from 'react-dom';
 
 const roles = ['marketing', 'software', 'sales', 'photographer', 'social', 'uiux'];
 
 export default function JobListing() {
     const t = useTranslations('careers');
     const [selectedRole, setSelectedRole] = useState<string | null>(null);
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     return (
         <section className="py-24 bg-dark-bg relative z-10">
@@ -79,78 +85,81 @@ export default function JobListing() {
                 </div>
 
                 {/* Detailed Modal */}
-                <AnimatePresence>
-                    {selectedRole && (
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                            className="fixed inset-0 z-[100] flex items-center justify-center p-4"
-                        >
-                            <div className="absolute inset-0 bg-black/80 backdrop-blur-md" onClick={() => setSelectedRole(null)} />
-
+                {mounted && createPortal(
+                    <AnimatePresence>
+                        {selectedRole && (
                             <motion.div
-                                layoutId={selectedRole}
-                                initial={{ scale: 0.9, opacity: 0, y: 50 }}
-                                animate={{ scale: 1, opacity: 1, y: 0 }}
-                                exit={{ scale: 0.95, opacity: 0, y: 30 }}
-                                className="relative bg-[#111] border border-white/10 w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl shadow-2xl p-8 md:p-12"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                className="fixed inset-0 z-[1000] flex items-center justify-center p-4"
                             >
-                                <button
-                                    onClick={() => setSelectedRole(null)}
-                                    className="absolute top-6 right-6 p-2 rounded-full bg-white/5 hover:bg-white/20 transition-colors"
+                                <div className="absolute inset-0 bg-black/80 backdrop-blur-md" onClick={() => setSelectedRole(null)} />
+
+                                <motion.div
+                                    layoutId={selectedRole}
+                                    initial={{ scale: 0.9, opacity: 0, y: 50 }}
+                                    animate={{ scale: 1, opacity: 1, y: 0 }}
+                                    exit={{ scale: 0.95, opacity: 0, y: 30 }}
+                                    className="relative bg-[#111] border border-white/10 w-full max-w-2xl max-h-[85vh] overflow-y-auto rounded-3xl shadow-2xl p-6 md:p-10"
                                 >
-                                    ✕
-                                </button>
-
-                                <div className="mb-8">
-                                    <h2 className="heading-md mb-2">{t(`jobs.${selectedRole}.title`)}</h2>
-                                    <div className="flex gap-4 text-white/60">
-                                        <span>{t(`jobs.${selectedRole}.type`)}</span>
-                                        <span>•</span>
-                                        <span>{t(`jobs.${selectedRole}.location`)}</span>
-                                    </div>
-                                </div>
-
-                                <div className="space-y-8 text-white/80">
-                                    <p className="text-lg leading-relaxed">
-                                        {t(`jobs.${selectedRole}.description`)}
-                                    </p>
-
-                                    <div>
-                                        <h3 className="text-aesthetic-gold font-bold mb-4 uppercase tracking-wider text-sm">Responsibilities</h3>
-                                        <ul className="space-y-2">
-                                            {[0, 1, 2, 3].map(i => (
-                                                <li key={i} className="flex gap-3">
-                                                    <span className="text-aesthetic-gold">›</span>
-                                                    {t(`jobs.${selectedRole}.responsibilities.${i}`)}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-
-                                    <div>
-                                        <h3 className="text-aesthetic-gold font-bold mb-4 uppercase tracking-wider text-sm">Requirements</h3>
-                                        <ul className="space-y-2">
-                                            {[0, 1, 2, 3].map(i => (
-                                                <li key={i} className="flex gap-3">
-                                                    <span className="text-aesthetic-gold">›</span>
-                                                    {t(`jobs.${selectedRole}.requirements.${i}`)}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div className="mt-12 pt-8 border-t border-white/10 flex justify-end">
-                                    <button className="btn-primary w-full md:w-auto px-12">
-                                        Apply for this position
+                                    <button
+                                        onClick={() => setSelectedRole(null)}
+                                        className="absolute top-6 right-6 p-2 rounded-full bg-white/5 hover:bg-white/20 transition-colors"
+                                    >
+                                        ✕
                                     </button>
-                                </div>
+
+                                    <div className="mb-8">
+                                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">{t(`jobs.${selectedRole}.title`)}</h2>
+                                        <div className="flex gap-4 text-white/60">
+                                            <span>{t(`jobs.${selectedRole}.type`)}</span>
+                                            <span>•</span>
+                                            <span>{t(`jobs.${selectedRole}.location`)}</span>
+                                        </div>
+                                    </div>
+
+                                    <div className="space-y-8 text-white/80">
+                                        <p className="text-lg leading-relaxed">
+                                            {t(`jobs.${selectedRole}.description`)}
+                                        </p>
+
+                                        <div>
+                                            <h3 className="text-aesthetic-gold font-bold mb-4 uppercase tracking-wider text-sm">{t('job_details.responsibilities')}</h3>
+                                            <ul className="space-y-2">
+                                                {[0, 1, 2, 3].map(i => (
+                                                    <li key={i} className="flex gap-3">
+                                                        <span className="text-aesthetic-gold">›</span>
+                                                        {t(`jobs.${selectedRole}.responsibilities.${i}`)}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <h3 className="text-aesthetic-gold font-bold mb-4 uppercase tracking-wider text-sm">{t('job_details.requirements')}</h3>
+                                            <ul className="space-y-2">
+                                                {[0, 1, 2, 3].map(i => (
+                                                    <li key={i} className="flex gap-3">
+                                                        <span className="text-aesthetic-gold">›</span>
+                                                        {t(`jobs.${selectedRole}.requirements.${i}`)}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div className="mt-12 pt-8 border-t border-white/10 flex justify-end">
+                                        <button className="btn-primary w-full md:w-auto px-12">
+                                            {t('job_details.apply_button')}
+                                        </button>
+                                    </div>
+                                </motion.div>
                             </motion.div>
-                        </motion.div>
-                    )}
-                </AnimatePresence>
+                        )}
+                    </AnimatePresence>,
+                    document.body
+                )}
             </div>
         </section>
     );

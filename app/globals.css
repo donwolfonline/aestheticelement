@@ -29,6 +29,25 @@ body[dir="rtl"] {
   font-family: 'Cairo', sans-serif;
 }
 
+/* Arabic text spacing improvements */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] .heading-xl,
+[dir="rtl"] .heading-lg,
+[dir="rtl"] .heading-md {
+  word-spacing: normal;
+  letter-spacing: 0;
+}
+
+/* Ensure TextReveal component has proper spacing for Arabic */
+[dir="rtl"] .heading-xl span,
+[dir="rtl"] .heading-lg span,
+[dir="rtl"] .heading-md span {
+  letter-spacing: 0;
+}
+
+
 @layer utilities {
   .glass {
     background: rgba(30, 41, 59, 0.7);
