@@ -72,6 +72,16 @@ body[dir="rtl"] {
     animation: gradient-shift 8s ease infinite;
   }
 
+  /* Fix for Arabic text rendering with gradients (prevents missing dots) */
+  [dir="rtl"] .text-gradient {
+    background: none;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: currentcolor;
+    background-clip: border-box;
+    color: var(--aesthetic-teal);
+    animation: none;
+  }
+
   .btn-primary {
     @apply px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-aesthetic-purple to-aesthetic-teal hover:shadow-lg hover:shadow-aesthetic-purple/50 transition-all duration-300 hover:scale-105;
   }
