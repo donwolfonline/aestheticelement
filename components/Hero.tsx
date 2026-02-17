@@ -26,7 +26,7 @@ export default function Hero() {
             </div>
 
             <div className="section-container text-center z-10">
-                <div className="mb-10">
+                <div className="mb-20">
                     <TextReveal
                         text={t('title')}
                         className="heading-xl text-white justify-center"
