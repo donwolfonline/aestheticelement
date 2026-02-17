@@ -34,7 +34,7 @@ export default function Hero() {
                     />
                     <TextReveal
                         text={t('highlight')}
-                        className="heading-xl text-gradient justify-center"
+                        className={`heading-xl justify-center ${locale === 'ar' ? 'text-[#14B8A6]' : 'text-gradient'}`}
                         delay={0.5}
                         gap={gap}
                     />
